@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "heroku-prebuild": "cd frontend && yarn install && yarn run build",
     "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www"
   },
   "dependencies": {
