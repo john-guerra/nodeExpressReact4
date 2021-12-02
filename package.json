@@ -5,7 +5,7 @@
   "scripts": {
     "heroku-prebuild": "cd frontend && yarn install",
     "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
-    "build": "cd frontend && yarn build"
+    "heroku-postbuild": "cd frontend && yarn build"
 
   },
   "dependencies": {
