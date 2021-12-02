@@ -3,10 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "heroku-prebuild": "cd frontend && npm install",
-    "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
-    "heroku-postbuild": "cd frontend && npm run build"
-
+    "heroku-prebuild": "cd frontend && npm install && npm run build",
+    "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
