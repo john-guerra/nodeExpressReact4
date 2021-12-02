@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "cd frontend && yarn install && yarn build",
+    "build": "cd frontend && yarn install && yarn build",
     "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www"
   },
   "dependencies": {
